@@ -1,6 +1,16 @@
+import Scheaduling from './pages/Scheadualing';
+import Home from './pages/Home';
+
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+
 const Router = () => {
     return (
-        <div>Router</div>
+        <BrowserRouter>
+        <Routes>
+            <Route path = '/' element={<Home/>}/>
+            <Route path = '/Scheaduling' element={<Scheaduling/>}/>
+        </Routes>
+        </BrowserRouter>
     )
 }
 
